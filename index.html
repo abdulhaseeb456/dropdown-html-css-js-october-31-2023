@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dropdown</title>
+
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+
+  <body>
+    <div class="dropdown">
+      <button>Options <ion-icon name="arrow-dropdown"></ion-icon></button>
+      <ul class="dropdown-menu">
+        <div class="signed-in-det">
+          <p>Signed in as</p>
+          <p class="username">abdul@gmail.com</p>
+        </div>
+        <li class="divider"></li>
+        <li>
+          <a href=""><ion-icon name="person"></ion-icon> Account</a>
+        </li>
+        <li class="divider"></li>
+        <li>
+          <a href=""><ion-icon name="star-outline"></ion-icon> Stars</a>
+        </li>
+        <li>
+          <a href=""><ion-icon name="heart-empty"></ion-icon> Favourites</a>
+        </li>
+        <li class="divider"></li>
+        <li>
+          <a href=""><ion-icon name="settings"></ion-icon> Settings</a>
+        </li>
+        <li>
+          <a href=""><ion-icon name="log-out"></ion-icon> Log out</a>
+        </li>
+      </ul>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>

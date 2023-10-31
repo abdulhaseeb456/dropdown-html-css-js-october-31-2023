@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Inter";
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(120deg, #facedd, #c2e5ff);
+  margin: 0;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown button {
+  font-size: 16px;
+  padding: 8px 16px;
+  border: 0;
+  background: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #57606a;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+}
+
+.dropdown button ion-icon {
+  margin: 2px 0 0 4px;
+  font-size: 20px;
+  transition: 0.2s linear;
+}
+
+.dropdown.active button ion-icon {
+  transform: rotate(180deg);
+}
+
+.dropdown .dropdown-menu {
+  margin: 0;
+  padding: 0;
+  padding: 5px;
+  border-radius: 10px;
+  background: #fff;
+  width: 200px;
+  position: absolute;
+  top: 120%;
+  left: 0;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.1);
+  display: none;
+}
+
+.dropdown.active .dropdown-menu {
+  display: block;
+}
+
+.dropdown .dropdown-menu .signed-in-det {
+  padding: 8px;
+}
+
+.dropdown .dropdown-menu .signed-in-det p {
+  margin: 0;
+  font-size: 13px;
+  color: #333;
+}
+
+.dropdown .dropdown-menu .signed-in-det p.username {
+  font-size: 15px;
+  font-weight: 600;
+  margin-top: 3px;
+}
+
+.dropdown .dropdown-menu li {
+  list-style: none;
+}
+
+.dropdown .dropdown-menu li a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 8px;
+  color: #333;
+  font-size: 15px;
+  border-radius: 10px;
+  transition: 0.2s ease;
+}
+
+.dropdown .dropdown-menu li a ion-icon {
+  margin-right: 8px;
+  font-size: 18px;
+}
+
+.dropdown .dropdown-menu li a:hover {
+  background-color: #e9ecef;
+}
+
+.dropdown .dropdown-menu li.divider {
+  height: 1px;
+  background: #eee;
+  margin: 5px 0;
+}
